@@ -6,19 +6,19 @@
         <title> Getting User Input</title>
     </head>
     <body>
-        <form onsubmit="return processForm()">
+        
         <label for="name">Enter your name:</label>
-        <input type="text" id="name" required>
+        <input type="text" id="name">
         <button type="submit">Submit</button>
         </form>
 
         <script>
-            function processForm(){
+           
                 let userName = document.getElementByID("name").value;
                 console.log("Hello, " + userName + "!");
                 return false;
 
-            }
+            
         </script>
     </body>
 </html>
