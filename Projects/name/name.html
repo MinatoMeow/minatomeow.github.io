@@ -9,14 +9,13 @@
         
         <label for="name">Enter your name:</label>
         <input type="text" id="name">
-        <button type="submit">Submit</button>
-        </form>
+        <button onclick="sayName()">Enter</button>
 
         <script>
-           
-                let userName = document.getElementByID("name").value;
-                console.log("Hello, " + userName + "!");
-
+           function sayName() {
+           var userName = document.getElementById('name').value;
+            console.log("Hello, " + userName + "!");
+           }
             
         </script>
     </body>
