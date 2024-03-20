@@ -1,0 +1,26 @@
+<!-- Display the countdown timer in an element -->
+<html>
+  <body>
+    <h1>Doggy Drops</h1>
+    <p id="doggy-countdown"></p>
+
+    <script>
+      function timer() {
+        var sec = 60 * 5;
+
+        var timer = setInterval(function () {
+          document.getElementById("doggy-countdown").innerHTML = sec;
+          sec--;
+
+          if (sec < 0) {
+            clearInterval(timer);
+          }
+        }, 1000);
+      }
+
+      window.onload = function () {
+        timer();
+      };
+    </script>
+  </body>
+</html>
