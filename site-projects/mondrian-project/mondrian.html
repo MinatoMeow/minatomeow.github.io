@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .canvas {
+        display: grid;
+        height: 748px;
+        width: 748px;
+        background-color: #000;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 1fr 155px 20px;
+        gap: 9px;
+      }
+
+      .red {
+        background-color: #e72f24;
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      .yellow {
+        background-color: #f9d01e;
+      }
+
+      .black {
+        background-color: #232629;
+      }
+
+      .blue {
+        background-color: #004592;
+        grid-area: 2 / 4;
+        margin-bottom: 10px;
+      }
+
+      .white {
+        background-color: #f0f1ec;
+      }
+
+      #one {
+        grid-area: 1 / 2 / 1 / span 3;
+      }
+
+      #two {
+        grid-area: 2 / 1 / span 2 / 1;
+      }
+
+      #three {
+        grid-area: 2 / 2 / span 2 / span 2;
+      }
+
+      #four {
+        grid-area: 4 / 1;
+      }
+
+      #five {
+        grid-area: 3 / 4 / span 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="canvas">
+        <div class="blocks white" id="one"></div>
+        <div class="blocks white" id="two"></div>
+        <div class="blocks white" id="three"></div>
+        <div class="blocks white" id="four"></div>
+        <div class="blocks white" id="five"></div>
+        <div class="blocks red"></div>
+        <div class="blocks yellow"></div>
+        <div class="blocks blue"></div>
+        <div class="blocks black"></div>
+      </div>
+    </div>
+  </body>
+</html>
