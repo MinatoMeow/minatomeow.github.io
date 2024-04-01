@@ -1,0 +1,9 @@
+ body {
+    background-color: #525FE1;
+}
+
+#main-page {
+    background-color: #FFA41B;
+    border: 10px solid black;
+    border-radius: 30px;
+}
