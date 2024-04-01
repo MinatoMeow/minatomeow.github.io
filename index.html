@@ -14,75 +14,137 @@
   </head>
 
   <body>
-    <div class="container">
-      <header
-        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a
-          href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <img src="./assets/mm-normal.svg">
-          <span class="fs-4" style="margin-left: 10px">My Site</span>
+    <!-- Navbar -->
+    
+    <header>
+     
+      <nav class="navbar navbar-expand-lg" aria-label="">
+        <div class="container-fluid">
+          <a
+          class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img id="logo" src="./assets/mm-normal.svg" onclick="changeFace()"/>
+          <span class="fs-4" style="margin-left: 10px"></span>
         </a>
 
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">test1</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">test2</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">test3</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">test4</a></li>
-        </ul>
-      </header>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExample08">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>           
+              <li class="nav-item">
+                <a class="nav-link" href="site-projects\side-stuff\resume.html">Resume</a>
+              </li>    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a class="dropdown-item" href="site-projects\rpg-dragon-game\index.html">Dragon RPG Game</a></li>
+                  <li><a class="dropdown-item" href="site-projects\pw-gen\password-generator.html">Password Generator</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+         
     </div>
+   
+    <div class="container px-5" id="main-page">
+      <!--Hero -->
+      <!-- 
+      <div class="container"> -->
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://media.giphy.com/media/WJ7Tr9wi8xVe0/giphy.gif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">My bio</h1>
+            <p class="lead">This is some stuff about me that I will add in later probably maybe thanks for looking. Things I like and things I like to do which IS MOSTLY BACKEND. MORE test and more text and more and more.</p>
+            
+          </div>
+        </div>
+      <div class="bg-dark text-secondary px-4 py-5 text-center">
+        <div class="py-5">
+          <h1 class="display-5 fw-bold text-white">
+            My Site of random things WIP
+          </h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">
+              I will just have links to my random\site-projects
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button
+                type="button"
+                class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                Resume
+              </button>
+              <button type="button" class="btn btn-outline-light btn-lg px-4">
+                Projects
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
 
-    <h1>My Site of random things WIP</h1>
-    <h2>I will just have links to my random\site-projects</h2>
+      <!-- Links to stuff in progress
+        <ul>
+        <li>
+          <a href="site-projects\side-stuff\resume.html">
+            Heres my resume its not updated
+          </a>
+        </li>
+        <li>
+          <a href="site-projects\side-stuff\card-collection.html">
+            Check current charmander cards here
+          </a>
+        </li>
+        <li>
+          <a href="site-projects\side-stuff\name.html">
+            I'll put a directory link maybe eventually
+          </a>
+        </li>
+        <li>
+          <a href="site-projects\pw-gen\password-generator.html">
+            PASSWORD GENERATOR
+          </a>
+        </li>
+        <li>
+          <a href="site-projects\motivational-poster\motivational-poster.html">
+            Click this to get happy dopamine
+          </a>
+        </li>
+        <li>
+          <a href="site-projects\side-stuff\timer-drops.html">
+            Silly barebones countdown timer
+          </a>
+        </li>
+        <li>
+          <a href="site-projects\rpg-dragon-game\index.html">
+            lil rpg game project in preparation fo a bigger one OwO
+          </a>
+        </li>
+        <li>
+          <a href="site-projects\mondrian-project\mondrian.html">
+            ART?!?! IN CSS?!?! and grids!
+          </a>
+        </li>
+      </ul>
 
-    <ul>
-      <li>
-        <a href="\site-projects\side-stuff\resume.html">
-          Heres my resume its not updated
-        </a>
-      </li>
-      <li>
-        <a href="\site-projects\side-stuff\card-collection.html">
-          Check current charmander cards here
-        </a>
-      </li>
-      <li>
-        <a href="\site-projects\side-stuff\name.html">
-          I'll put a directory link maybe eventually
-        </a>
-      </li>
-      <li>
-        <a href="\site-projects\pw-gen\password-generator.html">
-          PASSWORD GENERATOR
-        </a>
-      </li>
-      <li>
-        <a href="\site-projects\motivational-poster\motivational-poster.html">
-          Click this to get happy dopamine
-        </a>
-      </li>
-      <li>
-        <a href="\site-projects\side-stuff\timer-drops.html">
-          Silly barebones countdown timer
-        </a>
-      </li>
-      <li>
-        <a href="\site-projects\rpg-dragon-game\index.html">
-          lil rpg game project in preparation fo a bigger one OwO
-        </a>
-      </li>
-      <li>
-        <a href="site-projects\mondrian-project\mondrian.html">
-          ART?!?! IN CSS?!?! and grids!
-        </a>
-      </li>
-    </ul>
-
-    <img src="https://media.giphy.com/media/WJ7Tr9wi8xVe0/giphy.gif" />
-    <h3>havin a good time havin a goood time</h3>
+      <img src="https://media.giphy.com/media/WJ7Tr9wi8xVe0/giphy.gif" />
+      <h3>havin a good time havin a goood time</h3>
+    </div> -->
+    <!-- footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+      <script src="script.js"></script> 
   </body>
 </html>
