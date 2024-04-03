@@ -1,8 +1,8 @@
 const types = {
   symbols: "!@#$%^&*", //symbols
   numbers: "1234567890", //numbers
-  upperCase: "QWERTYUIOPASDFGHJKLZXCVBNM", //uppercase
-  lowerCase: "qwertyuiopasdfghjklzxcvbnm", //lowercase
+  uppercase: "QWERTYUIOPASDFGHJKLZXCVBNM", //uppercase
+  lowercase: "qwertyuiopasdfghjklzxcvbnm", //lowercase
 };
 
 const getType = [
@@ -14,12 +14,12 @@ const getType = [
     return types.numbers[Math.floor(Math.random() * types.numbers.length)];
   },
 
-  function upperCase() {
-    return types.upperCase[Math.floor(Math.random() * types.upperCase.length)];
+  function uppercase() {
+    return types.uppercase[Math.floor(Math.random() * types.uppercase.length)];
   },
 
-  function lowerCase() {
-    return types.lowerCase[Math.floor(Math.random() * types.lowerCase.length)];
+  function lowercase() {
+    return types.lowercase[Math.floor(Math.random() * types.lowercase.length)];
   },
 ];
 
