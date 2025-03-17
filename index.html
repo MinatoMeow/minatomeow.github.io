@@ -10,41 +10,80 @@
       crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
 
-    <title>My Site (WIP)</title>
+    <title>Jaimie Clampitt</title>
   </head>
 
   <body>
     <!-- Navbar -->
-    
+
     <header>
-     
       <nav class="navbar navbar-expand-lg" aria-label="">
         <div class="container-fluid">
           <a
-          class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <img id="logo" src="./assets/mm-normal.svg" onclick="changeFace()"/>
-          <span class="fs-4" style="margin-left: 10px"></span>
-        </a>
+            class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img
+              id="logo"
+              src="./assets/mm-normal.svg"
+              onclick="changeFace()" />
+            <span class="fs-4" style="margin-left: 10px"></span>
+          </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCat"
+            aria-controls="navbarCat"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-    
-          <div class="collapse navbar-collapse" id="navbarsExample08">
 
+          <div class="collapse navbar-collapse" id="navbarCat">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>           
+              </li>
               <li class="nav-item">
-                <a class="nav-link" href="site-projects\side-stuff\resume.html">Resume</a>
-              </li>    
+                <a class="nav-link" href="/assets/jaimie_clampitt_resume.pdf" download>Resume</a>
+              </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Projects
+                </a>
                 <ul class="dropdown-menu dropdown-menu-right">
-                  <li><a class="dropdown-item" href="site-projects\rpg-dragon-game\index.html">Dragon RPG Game</a></li>
-                  <li><a class="dropdown-item" href="site-projects\pw-gen\password-generator.html">Password Generator</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://pokemon-card-search.johto.io">
+                      Pokemon Card Search
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://minatomeow.github.io/password-generator">
+                      Password Generator
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://minatomeow.github.io/rpg-game/">
+                      Browser RPG Game
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://minatomeow.github.io/simon-says">
+                      Simon Says
+                    </a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -52,111 +91,185 @@
         </div>
       </nav>
     </header>
-         
-    </div>
-   
-    <div class="container px-5" id="main-page">
-      <!--Hero -->
-      <!-- 
-      <div class="container"> -->
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="https://media.giphy.com/media/WJ7Tr9wi8xVe0/giphy.gif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">My bio</h1>
-            <p class="lead">This is some stuff about me that I will add in later probably maybe thanks for looking. Things I like and things I like to do which IS MOSTLY BACKEND. MORE test and more text and more and more.</p>
-            
-          </div>
+
+    <div class="container" id="main-page">
+      <div class="row centering bio">
+        <div class="col-8 centering col-xs-4">
+          <img
+            src="assets/headshot.png"
+            class="img-fluid rounded-circle profile"
+            style="border: 10px solid black"
+            loading="lazy" />
         </div>
-      <div class="px-4 py-5 text-center text-body-emphasis">
-        <div class="py-5">
-          <h1 class="display-5 fw-bold">
-            My Site of random things WIP
+      </div>
+      <div class="row centering bio">
+        <div class="col centering">
+          <h1 class="display-1 fw-bold text-body-emphasis lh-1 mb-3">
+            Hi there!
           </h1>
-          <div class="col-lg-6 mx-auto">
-            <p class="fs-5 mb-4">
-              I will just have links to my random\site-projects
+        </div>
+        <div class="row centering bio">
+          <div class="col-6 centering">
+            <p class="text" style="white-space: pre-wrap">
+Hello! If you're reading this you must be interested in who I am! My name is Jaimie, and I'm a college graduate with a degree in Computer Science and a great love for troubleshooting and solving problems! <br> I enjoy programming, art, and fixing old electronics by using my self-taught soldering skills (haven't burned anything yet!). 
+Learning how things work is something I really enjoy.
+
+You may catch me playing video games or drawing in my free time, or learing how to play a new board game. My career goals are to learn and improve my programming skills with other professionals in order to gain more experience and create amazing, well-written code. 
+
+Thank you for visiting my site!
             </p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button type="button" class="btn btn-outline-dark btn-lg px-4">
-                Projects
-              </button>
-            </div>
           </div>
         </div>
       </div>
-      <!-- </div> -->
-
-      <!-- Links to stuff in progress
-        <ul>
-        <li>
-          <a href="site-projects\side-stuff\resume.html">
-            Heres my resume its not updated
-          </a>
-        </li>
-        <li>
-          <a href="site-projects\side-stuff\card-collection.html">
-            Check current charmander cards here
-          </a>
-        </li>
-        <li>
-          <a href="site-projects\side-stuff\name.html">
-            I'll put a directory link maybe eventually
-          </a>
-        </li>
-        <li>
-          <a href="site-projects\pw-gen\password-generator.html">
-            PASSWORD GENERATOR
-          </a>
-        </li>
-        <li>
-          <a href="site-projects\motivational-poster\motivational-poster.html">
-            Click this to get happy dopamine
-          </a>
-        </li>
-        <li>
-          <a href="site-projects\side-stuff\timer-drops.html">
-            Silly barebones countdown timer
-          </a>
-        </li>
-        <li>
-          <a href="site-projects\rpg-dragon-game\index.html">
-            lil rpg game project in preparation fo a bigger one OwO
-          </a>
-        </li>
-        <li>
-          <a href="site-projects\mondrian-project\mondrian.html">
-            ART?!?! IN CSS?!?! and grids!
-          </a>
-        </li>
-      </ul>
-
-      <img src="https://media.giphy.com/media/WJ7Tr9wi8xVe0/giphy.gif" />
-      <h3>havin a good time havin a goood time</h3> -->
-    </div>
-    <!-- footer -->
-    <!-- <div class="container"> -->
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+      <div class="row">
+        <div class="px-4 py-4 text-center text-body-emphasis">
+          <h1 class="h1 fw-bold">My Projects</h1>
+          <div class="col">
+            <p class="text">Here are some cool things I've made!</p>
+            <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn btn-outline-dark btn-lg px-4">
+                Projects
+              </button>
+            </div> -->
+          </div>
         </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-        </ul>
-      </footer>
+      </div>
+      <div class="container cards">
+        <div class="row row-cols-2 ">
+          <div class="col-12 col-lg-6 centering">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="assets/cardsearch.png"
+                alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Pokemon Card Search</h5>
+                <p class="card-text">
+                  Created with Javascript, Express, Node.js and using the TCGdex API. Search any Base Set Pokemon Card by name!
+                </p>
+                <a
+                  href="https://pokemon-card-search.johto.io"
+                  class="btn btn-primary">
+                  Live Link
+                </a>
+                <a
+                  href="https://github.com/MinatoMeow/pokemon-card-search"
+                  class="btn btn-secondary">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 centering">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="assets/pwgen.png"
+                alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Password Generator</h5>
+                <p class="card-text">
+                  Created with Javascript, an in-browser, mobile-friendly password generator.
+                </p>
+                <a
+                  href="https://minatomeow.github.io/password-generator/"
+                  class="btn btn-primary">
+                  Live Link
+                </a>
+                <a
+                  href="https://github.com/MinatoMeow/password-generator"
+                  class="btn btn-secondary">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 centering">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="assets/rpggame.png"
+                alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Browser RPG Game</h5>
+                <p class="card-text">
+                  Created with Javascript, an in-browser RPG game.
+                </p>
+                <a
+                  href="https://minatomeow.github.io/rpg-game/"
+                  class="btn btn-primary">
+                  Live Link
+                </a>
+                <a
+                  href="https://github.com/MinatoMeow/rpg-game"
+                  class="btn btn-secondary">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 centering">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="assets/simonsays.png"
+                alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Simon Says</h5>
+                <p class="card-text">
+                  Created with Javascript, an in-browser Simon-Says game for fans of FFXIV.
+                </p>
+                <a
+                  href="https://minatomeow.github.io/simon-says/"
+                  class="btn btn-primary">
+                  Live Link
+                </a>
+                <a
+                  href="https://github.com/MinatoMeow/simon-says"
+                  class="btn btn-secondary">
+                  Github
+                </a>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+          
+        <div class="col-12 col-lg-6 centering">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="assets/wip.png"
+              alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Get this off your backlog</h5>
+              <p class="card-text">
+                WIP Using Java, Springboot, Javascript, Postgres; Login and write down what you were doing in that one game you keep dropping. Never forget what you were working on again!
+              </p>
+              <a
+                href="https://minatomeow.github.io/index.html"
+                class="btn btn-primary">
+                WIP
+              </a>
+              <a
+                href="https://minatomeow.github.io/index.html"
+                class="btn btn-secondary">
+                WIP
+              </a>
+            </div>
+      </div>
     </div>
+    <footer class="row accent container" id="footer">
+      <div id="name" class="col centering">
+        <a href="https://github.com/MinatoMeow">Created by Jaimie Clampitt</a>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
-      <script src="script.js"></script> 
+    <script src="script.js"></script>
   </body>
 </html>
